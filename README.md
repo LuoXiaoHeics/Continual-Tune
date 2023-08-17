@@ -14,7 +14,7 @@ For evaluation, we adopt the evaluation framework of lm-evaluation-harness from 
 python3 lm-evaluation-harness/main.py \
     --model hf-causal-experimental \
     --model_args pretrained=${path} \
-    --tasks  piqa,boolq,winogrande,hellaswag,mathqa,mutual,toxigen \
+    --tasks  piqa,boolq,winogrande,hellaswag,mathqa,mutual \
     --device cuda:0 \
     --output_path results.txt \
     --no_cache 
