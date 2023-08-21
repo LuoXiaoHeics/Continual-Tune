@@ -27,11 +27,16 @@ Note that in lm-evaluation-harness, some tasks like MMLU are evaluated separatel
 
 ## Citation
 
-@misc{luo2023empirical,
-      title={An Empirical Study of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning}, 
-      author={Yun Luo and Zhen Yang and Fandong Meng and Yafu Li and Jie Zhou and Yue Zhang},      
-      year={2023},      
-      eprint={2308.08747},      
-      archivePrefix={arXiv},     
-      primaryClass={cs.CL}     
+@article{luo2023empirical,
+
+title={An Empirical Study of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning}, 
+      
+author={Yun Luo and Zhen Yang and Fandong Meng and Yafu Li and Jie Zhou and Yue Zhang},
+      
+year={2023},      
+      
+eprint={2308.08747},    
+      
+archivePrefix={arXiv}
+
 }
