@@ -8,7 +8,7 @@ export TORCH_EXTENSIONS_DIR=$curr_dir
 deepspeed $curr_dir/scripts/train.py \
 	--model_name_or_path $hf_model_dir \
 	--data_path $curr_dir/instruction \
-	--output_dir $curr_dir/bloom7b/ \
+	--output_dir $curr_dir/bloomz7b1/ \
 	--num_train_epochs 3 \
 	--per_device_train_batch_size 4 \
 	--gradient_accumulation_steps 4 \
@@ -16,11 +16,11 @@ deepspeed $curr_dir/scripts/train.py \
 	--save_strategy 'steps' \
 	--save_total_limit 2 \
 	--learning_rate 2e-5 \
-    --warmup_steps 1 \
-    --logging_steps 10 \
+    	--warmup_steps 1 \
+    	--logging_steps 10 \
 	--lr_scheduler_type 'constant' \
-    --report_to 'tensorboard' \
-    --gradient_checkpointing True \
-    --deepspeed $curr_dir/configs/deepspeed_config_13B.json \
-    --fp16 True 
+    	--report_to 'tensorboard' \
+    	--gradient_checkpointing True \
+    	--deepspeed $curr_dir/configs/deepspeed_config_13B.json \
+    	--fp16 True 
 	
